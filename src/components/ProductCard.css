@@ -1,0 +1,75 @@
+/* src/components/ProductCard.css */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to bottom if info varies */
+  width: 280px; /* Adjust as needed for desired layout */
+  box-sizing: border-box;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.product-info {
+  flex-grow: 1; /* Allows info to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 1.4em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #2e7d32; /* Green color for price */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  min-height: 60px; /* Give some space for description */
+}
+
+.add-to-cart-button {
+  background-color: #66bb6a; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button take full width of card padding */
+  margin-top: auto; /* Pushes button to the bottom of its flex container */
+}
+
+.add-to-cart-button:hover {
+  background-color: #4caf50; /* Darker green on hover */
+}

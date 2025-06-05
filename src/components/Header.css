@@ -1,0 +1,75 @@
+/* src/components/Header.css */
+.app-header {
+  background-color: #2c5e2e; /* Darker green */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #e8f5e9; /* Light green for text */
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #c8e6c9; /* Lighter green for links */
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff; /* White on hover */
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-link svg {
+  fill: #c8e6c9;
+  transition: fill 0.3s ease;
+}
+
+.cart-link:hover svg {
+  fill: #ffffff;
+}
+
+.cart-count {
+  background-color: #ff6f61; /* A contrasting color for the count */
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.75em;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  line-height: 1;
+  font-weight: bold;
+}

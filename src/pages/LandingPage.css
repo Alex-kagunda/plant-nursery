@@ -1,0 +1,73 @@
+/* src/pages/LandingPage.css */
+html, body, #root {
+  height: 100%; /* Ensure the root elements can expand to full height */
+  margin: 0;
+}
+
+.landing-page {
+  /*
+    Image from Unsplash by Scott Webb: https://unsplash.com/photos/landscape-shot-of-green-leafed-plants-Yn0l7uwA7MY
+  */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), /* Adjusted opacity slightly */
+                    url('https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Cover full viewport height */
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white; /* Default text color for content within */
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for text readability */
+  padding: 40px 50px; /* Increased padding slightly */
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%; /* Ensure it doesn't get too wide on large screens, but responsive */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  position: relative; /* Establishes a stacking context, good practice */
+  z-index: 1; /* Ensures it's above the parent's background if there were any overlap concerns */
+}
+
+.company-name {
+  font-size: 3.2em; /* Slightly adjusted */
+  margin-bottom: 20px;
+  color: #a5d6a7; /* Lighter green */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Slightly refined shadow */
+}
+
+.company-description {
+  font-size: 1.15em; /* Slightly adjusted */
+  line-height: 1.7; /* Increased line height for readability */
+  margin-bottom: 35px; /* Increased margin */
+  color: #e8f5e9; /* Off-white/very light green */
+}
+
+.get-started-button {
+  background-color: #66bb6a; /* Green button */
+  color: white;
+  padding: 15px 35px; /* Adjusted padding */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  border: none; /* Removed border, using shadow for depth */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.get-started-button:hover,
+.get-started-button:focus { /* Added :focus for accessibility */
+  background-color: #4caf50; /* Darker green on hover/focus */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  outline: none; /* Remove default focus outline if custom styles are sufficient */
+}

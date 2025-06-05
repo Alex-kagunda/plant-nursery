@@ -1,0 +1,128 @@
+/* src/components/CartItem.css */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  margin-bottom: 15px;
+  gap: 15px; /* Spacing between flex items */
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  min-width: 150px; /* Prevent too much squishing */
+}
+
+.cart-item-name {
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.cart-item-price {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  min-width: 100px; /* Consistent width */
+}
+
+.quantity-button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+  margin: 0 5px;
+}
+
+.quantity-button:hover {
+  background-color: #bdbdbd;
+}
+
+.quantity-text {
+  font-size: 1.1em;
+  padding: 0 10px;
+  min-width: 20px; /* Ensure space for two digits */
+  text-align: center;
+}
+
+.cart-item-total {
+  min-width: 100px; /* Consistent width */
+  text-align: right;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.cart-item-actions {
+  min-width: 80px; /* Consistent width */
+  text-align: right;
+}
+
+.remove-button {
+  background-color: #ff6f61; /* A soft red */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #e53935; /* Darker red */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .cart-item-image {
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .cart-item-details,
+  .cart-item-quantity,
+  .cart-item-total,
+  .cart-item-actions {
+    width: 100%;
+    text-align: left; /* Adjust alignment for stacked view */
+  }
+  .cart-item-quantity {
+    justify-content: flex-start;
+  }
+  .cart-item-total p {
+    text-align: left;
+  }
+  .cart-item-actions {
+     text-align: left; /* Or 'right' if preferred for the delete button */
+  }
+  .remove-button {
+    width: auto; /* Or 100% if desired full width */
+  }
+}
