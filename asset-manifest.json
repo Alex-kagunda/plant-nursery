@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/plant-nursery/static/css/main.87e3ef6b.css",
-    "main.js": "/plant-nursery/static/js/main.6a7e30fa.js",
-    "index.html": "/plant-nursery/index.html",
-    "main.87e3ef6b.css.map": "/plant-nursery/static/css/main.87e3ef6b.css.map",
-    "main.6a7e30fa.js.map": "/plant-nursery/static/js/main.6a7e30fa.js.map"
+    "main.css": "/e-plantshopping/static/css/main.87e3ef6b.css",
+    "main.js": "/e-plantshopping/static/js/main.6a7e30fa.js",
+    "index.html": "/e-plantshopping/index.html",
+    "main.87e3ef6b.css.map": "/e-plantshopping/static/css/main.87e3ef6b.css.map",
+    "main.6a7e30fa.js.map": "/e-plantshopping/static/js/main.6a7e30fa.js.map"
   },
   "entrypoints": [
     "static/css/main.87e3ef6b.css",
